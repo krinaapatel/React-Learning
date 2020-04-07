@@ -1,18 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import Greek from './Greek.js'
-import Welcome from './Welcome.js'
+/*import Greek from './Greek.js'
+import Welcome from './Welcome.js'*/
+import Message from './Message.js'
 import { Component } from 'react';
-import Hello from './Hello.js'
+/*import Hello from './Hello.js*/
+import Counter from './Counter.js'
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <Greek />
-                <Welcome />
-                <Hello />
+                {/* <Greek name="Bruce" heroName="Batman">
+                    <p>This is Children props</p>
+                </Greek> 
+                <Greek name="Clark" heroName="Superman">
+                    <button>Action</button>
+                </Greek>
+                <Greek name="Diana" heroName="wonder women" />
+                
+                <Welcome name="Bruce" heroName="Batman">
+                    <p>This is Children props</p>
+                </Welcome>
+                <Welcome name="Clark" heroName="Superman">
+                    <button>Action</button>
+                </Welcome> 
+                <Welcome name="Diana" heroName="wonder women" /> */}
+                {/* <Hello />*/}
+                {/* <Message/> */}
+                <Counter/>
             </div>
         );
     }
