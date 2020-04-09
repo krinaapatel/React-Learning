@@ -1,27 +1,39 @@
 import React from 'react';
 
 import './App.css';
-/*import Greek from './Greek.js'
-import Welcome from './Welcome.js'*/
-import Message from './Message.js'
 import { Component } from 'react';
-/*import Hello from './Hello.js*/
+import EventBind from './EventBind';
+/*import Greek from './Greek.js'
+import Welcome from './Welcome.js'
+import Message from './Message.js'*/
+/*import Hello from './Hello.js
 import Counter from './Counter.js'
+import FunctionClick from './FunctionClick.js'
+import ClassClick from './ClassClick.js'
+import ParentComponent from './ParentComponent.js'*/
+import UserGreeting from './UserGreeting';
 
 class App extends Component {
     render() {
         return (
             <div className="App">
+                <UserGreeting />
+                {/*  <ParentComponent />
+                <EventBind />
+                <FunctionClick />
+                    <ClassClick />*/}
                 {/* <Greek name="Bruce" heroName="Batman">
                     <p>This is Children props</p>
                 </Greek> 
                 <Greek name="Clark" heroName="Superman">
                     <button>Action</button>
                 </Greek>
+                 
                 <Greek name="Diana" heroName="wonder women" />
+
                 
-                <Welcome name="Bruce" heroName="Batman">
-                    <p>This is Children props</p>
+                <Welcome name="Bruce" heroName="Batman"/>*/}
+                    {/*     <p>This is Children props</p>
                 </Welcome>
                 <Welcome name="Clark" heroName="Superman">
                     <button>Action</button>
@@ -29,7 +41,7 @@ class App extends Component {
                 <Welcome name="Diana" heroName="wonder women" /> */}
                 {/* <Hello />*/}
                 {/* <Message/> */}
-                <Counter/>
+                {/*<Counter/>*/}
             </div>
         );
     }
