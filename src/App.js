@@ -12,16 +12,18 @@ import FunctionClick from './FunctionClick.js'
 import ClassClick from './ClassClick.js'
 import ParentComponent from './ParentComponent.js'*/
 import UserGreeting from './UserGreeting';
+import NameList from './NameList';
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <UserGreeting />
-                {/*  <ParentComponent />
+                <NameList/>
+                {/*<UserGreeting />
+                <ParentComponent />
                 <EventBind />
                 <FunctionClick />
-                    <ClassClick />*/}
+                <ClassClick />*/}
                 {/* <Greek name="Bruce" heroName="Batman">
                     <p>This is Children props</p>
                 </Greek> 
