@@ -10,21 +10,33 @@ import Message from './Message.js'*/
 import Counter from './Counter.js'
 import FunctionClick from './FunctionClick.js'
 import ClassClick from './ClassClick.js'
-import ParentComponent from './ParentComponent.js'*/
-import UserGreeting from './UserGreeting';
-import NameList from './NameList';
+import ParentComponent from './ParentComponent.js'
+import UserGreeting from './UserGreeting'
+import NameList from './NameList'
+import Stylesheet from './Stylesheet.js' 
+import Inline from './Inline'
+import './appStyles.css'
+import styles from './appStyles.module.css'*/
+import Form from './Form.js'
 
 class App extends Component {
     render() {
         return (
             <div className="App">
+                <Form/>
+                {/* 
+                <h1 className='error'>Error</h1>
+                <h1 className={styles.success}>Success</h1>
+                <Inline />
+               
+                <Stylesheet primary="true" />
                 <NameList/>
-                {/*<UserGreeting />
+                <UserGreeting />
                 <ParentComponent />
                 <EventBind />
                 <FunctionClick />
-                <ClassClick />*/}
-                {/* <Greek name="Bruce" heroName="Batman">
+                <ClassClick />
+                <Greek name="Bruce" heroName="Batman">
                     <p>This is Children props</p>
                 </Greek> 
                 <Greek name="Clark" heroName="Superman">
