@@ -25,10 +25,14 @@ class Form extends Component {
             topic: event.target.value
         })
     }
+    handleSubmit = event => {
+        alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
+        event.preventDefault()
+    }
 
     render() {
-        retrun(
-            <form>
+        return (
+            <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>Username </label>
                     <input type="text"
@@ -36,7 +40,7 @@ class Form extends Component {
                         onChange={this.handleUsernameChange} />
                 </div>
                 <div>
-                    <label></label>
+                    <label>Comments </label>
                     <textarea value={this.state.comments}
                         onChange={this.handleCommentsChange}></textarea>
                 </div>
@@ -54,4 +58,4 @@ class Form extends Component {
     }
 }
 
-export default Form
+export default Form;
